@@ -1,0 +1,33 @@
+.navbar {
+  font-size: xx-large;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right h4 {
+  margin-right: 30px;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 670px) {
+  .right h4 {
+    font-size: small;
+  }
+}
