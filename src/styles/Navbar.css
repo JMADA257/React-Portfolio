@@ -31,5 +31,6 @@
 @media (max-width: 670px) {
   .right h4 {
     font-size: small;
+    width: 100%;
   }
 }

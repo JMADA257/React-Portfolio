@@ -1,9 +1,13 @@
 import Navbar from "./components/Navbar";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <nav>
+        <Navbar />
+      </nav>
+      <Carousel />
     </>
   );
 }
