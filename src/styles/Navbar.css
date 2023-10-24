@@ -5,11 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 100px;
 }
 
 .left {
   display: flex;
   align-items: center;
+  margin-left: 40px;
 }
 
 .right {
