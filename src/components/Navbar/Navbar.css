@@ -1,7 +1,7 @@
 .navbar {
   font-size: xx-large;
-  background-color: rgb(44, 42, 42);
-  color: white;
+  background-color: var(--RichBlack);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .right a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 

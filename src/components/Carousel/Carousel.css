@@ -1,9 +1,9 @@
 .Carousel {
   margin: 20px auto;
-  border: 2px solid black;
+  border: 1px solid var(--RichBlack);
   border-radius: 15px 15px 15px;
-  background-color: rgb(44, 42, 42);
-  color: lightslategray;
+  background-color: var(--RichBlack);
+  color: var(--white);
 }
 
 .Carousel .img-fluid {

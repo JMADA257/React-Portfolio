@@ -53,11 +53,11 @@ function Background() {
         },
         particles: {
           color: {
-            value: "#000000",
+            value: "#edfb60",
             opacity: 0.2,
           },
           links: {
-            color: "#000000",
+            color: "#edfb60",
             distance: 150,
             enable: true,
             opacity: 0.2,
@@ -78,7 +78,7 @@ function Background() {
               enable: true,
               area: 800,
             },
-            value: 20,
+            value: 10,
           },
           opacity: {
             value: 0.5,
