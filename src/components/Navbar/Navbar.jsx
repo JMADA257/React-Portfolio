@@ -7,15 +7,18 @@ function CustomNavbar() {
         <h1>Jordan Adams</h1>
       </div>
       <div className="right">
-        <h4>
-          <a href="#Projects">Home Page!</a>
-        </h4>
-        <h4>
-          <a href="#About">About me!</a>
-        </h4>
-        <h4>
+        <h5>
+          <a href="#Home">Home Page!</a>
+        </h5>
+        <h5>
+          <a href="#Projects">Projects</a>
+        </h5>
+        <h5>
           <a href="#Contact">Contact me!</a>
-        </h4>
+        </h5>
+        <h5>
+          <a href="#Resume">Resume!</a>
+        </h5>
       </div>
     </nav>
   );
