@@ -27,7 +27,8 @@ function Background() {
       options={{
         background: {
           color: {
-            value: "#2A2A2C",
+            // value: "#2A2A2C",
+            value: "#000000",
           },
         },
         fpsLimit: 120,
@@ -53,11 +54,13 @@ function Background() {
         },
         particles: {
           color: {
-            value: "#edfb60",
-            opacity: 0.2,
+            // value: "#edfb60",
+            value: "#ffffff",
+            opacity: 1,
           },
           links: {
-            color: "#edfb60",
+            // color: "#edfb60",
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.2,
