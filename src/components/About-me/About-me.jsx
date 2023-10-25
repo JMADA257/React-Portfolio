@@ -29,7 +29,6 @@ function AboutMe() {
           </article>
         </section>
       </div>
-      <div> Globe goes here! </div>
     </>
   );
 }

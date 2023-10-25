@@ -40,7 +40,7 @@ function GlobeRotation({ meshRef }) {
   useFrame(() => {
     if (meshRef.current) {
       // Rotate the sphere on the y-axis to make it spin
-      meshRef.current.rotation.y += 0.003; // Adjust the rotation speed here
+      meshRef.current.rotation.y += 0.002; // Adjust the rotation speed here
 
       // Angle the sphere on the x-axis to tilt it down
       meshRef.current.rotation.x = Math.PI / 8; // Adjust the angle here

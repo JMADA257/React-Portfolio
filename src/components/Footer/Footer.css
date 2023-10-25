@@ -4,4 +4,10 @@ footer {
   color: var(--white);
   padding-bottom: 5px;
   background-color: var(--RichBlack);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.footer-image {
+  width: 50px;
 }
