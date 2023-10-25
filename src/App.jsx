@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Background from "./components/Background/Background";
 import Footer from "./components/Footer/Footer";
 import AboutMe from "./components/About-me/About-me";
+import Globe from "./components/Globe/Globe";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
       </nav>
       <AboutMe />
+      <Globe />
       {/* <Container>
         <Row>
           <Col md={12}>
