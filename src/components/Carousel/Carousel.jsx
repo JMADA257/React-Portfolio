@@ -1,36 +1,48 @@
 import Carousel from "react-bootstrap/Carousel";
-import "../styles/Carousel.css";
-import ShredNStyle from "../assets/ShredNStyle.png";
-import TechBlog from "../assets/Tech-Blog.png";
-import MenuMatch from "../assets/Menu-Match.png";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+import "../Carousel/Carousel.css";
+import ShredNStyle from "../../assets/ShredNStyle.png";
+import TechBlog from "../../assets/Tech-Blog.png";
+import MenuMatch from "../../assets/Menu-Match.png";
 // import JSQuiz from "../assets/Menu-Match.png";
 // import WeatherDashboard from "../assets/Menu-Match.png";
 
 function CustomCarousel() {
   return (
-    <Carousel>
+    <Carousel
+      className="Carousel"
+      indicators={false}
+      fade={true}
+      touch={true}
+      interval={3500}
+    >
       <Carousel.Item>
-        <img src={ShredNStyle} alt="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <img src={ShredNStyle} alt="First slide" className="img-fluid" />
+        <h2 className="projectDescription">Hello world Im project one!</h2>
+        <p>
+          {" "}
+          className="projectDescription" Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Asperiores consectetur culpa quos recusandae ratione
+          ea totam. Minus quae ipsum.
+        </p>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={MenuMatch} alt="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        <img src={MenuMatch} alt="Second slide" className="img-fluid" />
+        <h2 className="projectDescription">Hello world Im project two!</h2>
+        <p className="projectDescription">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          consectetur culpa quos recusandae ratione ea totam. Minus quae ipsum.
+        </p>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={TechBlog} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <img src={TechBlog} alt="Third slide" className="img-fluid" />
+        <h2 className="projectDescription">Hello world Im project three!</h2>
+        <p className="projectDescription">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          consectetur culpa quos recusandae ratione ea totam. Minus quae ipsum.
+        </p>
       </Carousel.Item>
     </Carousel>
   );

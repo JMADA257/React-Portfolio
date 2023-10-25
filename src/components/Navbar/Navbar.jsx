@@ -1,4 +1,4 @@
-import "../styles/Navbar.css";
+import "../Navbar/Navbar.css";
 
 function CustomNavbar() {
   return (
@@ -8,7 +8,7 @@ function CustomNavbar() {
       </div>
       <div className="right">
         <h4>
-          <a href="#Projects">Projects</a>
+          <a href="#Projects">Home Page!</a>
         </h4>
         <h4>
           <a href="#About">About me!</a>

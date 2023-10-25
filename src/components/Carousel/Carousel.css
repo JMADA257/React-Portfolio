@@ -1,0 +1,17 @@
+.Carousel {
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 15px 15px 15px;
+  background-color: rgb(44, 42, 42);
+  color: lightslategray;
+}
+
+.Carousel .img-fluid {
+  border-radius: 15px 15px 15px;
+  /* height: 50% !important; */
+}
+
+.projectDescription {
+  text-align: center;
+  margin: 15px 0px;
+}
