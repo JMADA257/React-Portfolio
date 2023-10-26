@@ -1,5 +1,6 @@
 import React from "react";
 import "../About-me/About-me.css";
+import Globe from "../Globe/Globe";
 
 function AboutMe() {
   return (
@@ -29,6 +30,7 @@ function AboutMe() {
           </article>
         </section>
       </div>
+      <Globe />
     </>
   );
 }
