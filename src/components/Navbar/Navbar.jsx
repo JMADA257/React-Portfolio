@@ -1,6 +1,18 @@
+import React, { useState } from "react";
 import "../Navbar/Navbar.css";
+import ContactModal from "../Modal/Modal";
 
 function CustomNavbar() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => {
+    setShowModal(true);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="left">
@@ -8,18 +20,19 @@ function CustomNavbar() {
       </div>
       <div className="right">
         <h5>
-          <a href="#Home">Home Page!</a>
+          <a href="#Home">About me</a>
         </h5>
         <h5>
-          <a href="#Projects">Projects</a>
+          <a href="#Projects">Portfolio</a>
         </h5>
         <h5>
-          <a href="#Contact">Contact me!</a>
+          <a onClick={handleShow}>Contact</a>
         </h5>
         <h5>
-          <a href="#Resume">Resume!</a>
+          <a href="#Resume">Resume</a>
         </h5>
       </div>
+      <ContactModal show={showModal} handleClose={handleClose} />
     </nav>
   );
 }

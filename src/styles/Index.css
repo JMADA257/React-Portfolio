@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 :root {
   --CharcoalGrey: #2c2a29;
   --RichBlack: #343434;
   --highlighter: #edfb60;
   --white: #fff;
   --black: #000;
+  --modalGrey: #6b6570;
 }
 
 html,
@@ -16,4 +19,5 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Audiowide", sans-serif;
 }
