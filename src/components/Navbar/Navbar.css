@@ -35,6 +35,10 @@
   cursor: pointer;
 }
 
+svg {
+  margin-right: 10px;
+}
+
 @media (max-width: 670px) {
   .right h5 {
     font-size: small;
