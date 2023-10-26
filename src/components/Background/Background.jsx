@@ -8,10 +8,7 @@ import "./Background.css";
 function Background() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
+
     await loadSlim(engine);
   }, []);
 
@@ -54,12 +51,10 @@ function Background() {
         },
         particles: {
           color: {
-            // value: "#edfb60",
             value: "#ffffff",
             opacity: 1,
           },
           links: {
-            // color: "#edfb60",
             color: "#ffffff",
             distance: 150,
             enable: true,
@@ -73,7 +68,7 @@ function Background() {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 1,
             straight: false,
           },
           number: {

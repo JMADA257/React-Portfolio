@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 import ContactModal from "../Modal/Modal";
+import { Link } from "react-router-dom";
 
 function CustomNavbar() {
   const [showModal, setShowModal] = useState(false);
@@ -20,16 +21,28 @@ function CustomNavbar() {
       </div>
       <div className="right">
         <h5>
-          <a href="#Home">About me</a>
+          <Link
+            to="/about"
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
+            About me{" "}
+          </Link>
         </h5>
         <h5>
-          <a href="#Projects">Portfolio</a>
+          <Link
+            to="/projects"
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
+            Portfolio{" "}
+          </Link>
         </h5>
         <h5>
           <a onClick={handleShow}>Contact</a>
         </h5>
         <h5>
-          <a href="#Resume">Resume</a>
+          <a href="##">Resume</a>
         </h5>
       </div>
       <ContactModal show={showModal} handleClose={handleClose} />
