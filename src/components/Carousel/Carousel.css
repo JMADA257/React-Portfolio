@@ -1,5 +1,5 @@
 .Carousel {
-  margin: 20px auto;
+  margin: 40px auto;
   border: 1px solid var(--RichBlack);
   border-radius: 15px 15px 15px;
   background-color: var(--RichBlack);
@@ -8,7 +8,8 @@
 
 .Carousel .img-fluid {
   border-radius: 15px 15px 15px;
-  /* height: 50% !important; */
+  height: 50%;
+  width: 100%;
 }
 
 .projectDescription {
