@@ -10,9 +10,16 @@
   border-radius: 15px 15px 15px;
   height: 50%;
   width: 100%;
+  /* filter: grayscale(70%); */
 }
 
 .projectDescription {
   text-align: center;
   margin: 15px 0px;
 }
+
+/* .img-fluid:hover {
+  filter: none;
+  transition: 0.5s ease-in-out;
+} */
+

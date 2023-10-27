@@ -1,13 +1,14 @@
 import React from "react";
 import "../About-me/About-me.css";
 import Globe from "../Globe/Globe";
+import portait from "../../assets/Portrait.jpg";
 
 function AboutMe() {
   return (
     <>
       <div className="about">
         <img
-          src="https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww"
+          src={portait}
           alt="A photo of myself in the Marines"
           className="aboutPhoto"
         />

@@ -31,4 +31,10 @@
   height: 20%;
   margin: 5% 0px 0px 5%;
   border-radius: 5px 5px 5px;
+  filter: grayscale(100%);
+}
+
+.aboutPhoto:hover {
+  filter: none;
+  transition: 0.4s ease-in-out;
 }
