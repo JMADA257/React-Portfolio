@@ -10,8 +10,8 @@ function Footer() {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           fill="white"
           className="bi bi-linkedin"
           viewBox="0 0 16 16"
@@ -23,8 +23,8 @@ function Footer() {
       <a href="https://github.com/JMADA257" target="noBlank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           fill="white"
           className="bi bi-github"
           viewBox="0 0 16 16"
@@ -36,8 +36,8 @@ function Footer() {
       <a href="https://www.instagram.com/j_adams127/" target="noBlank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           fill="white"
           className="bi bi-instagram"
           viewBox="0 0 16 16"

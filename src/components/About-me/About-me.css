@@ -30,11 +30,29 @@
   width: 20%;
   height: 20%;
   margin: 5% 0px 0px 5%;
-  border-radius: 5px 5px 5px;
+  border-radius: 5px;
   filter: grayscale(100%);
 }
 
 .aboutPhoto:hover {
   filter: none;
   transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 630px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutText {
+    text-align: center;
+    margin: 7% auto;
+  }
+
+  .aboutPhoto {
+    width: 50%;
+    height: auto;
+    margin: 5% auto;
+  }
 }

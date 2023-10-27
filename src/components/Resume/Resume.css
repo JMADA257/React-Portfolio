@@ -1,4 +1,8 @@
 .resume {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 45px;
+}
+
+.resumeImg {
+  max-width: 80%;
 }

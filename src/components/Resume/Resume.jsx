@@ -8,7 +8,7 @@ export default function Resume() {
     <>
       <div className="resume">
         <a href={pdf} target="_blank">
-          <img src={ResumeSS} alt="Jordan's Resume" />
+          <img src={ResumeSS} alt="Jordan's Resume" className="resumeImg" />
         </a>
       </div>
     </>

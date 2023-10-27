@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 import ContactModal from "../Modal/Modal";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function CustomNavbar() {
   const [showModal, setShowModal] = useState(false);
+
+  const location = useLocation();
 
   const handleShow = () => {
     setShowModal(true);
@@ -34,7 +36,9 @@ function CustomNavbar() {
         <h5>
           <Link
             to="/about"
-            className="nav-link"
+            className={`nav-link ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
             onClick={() => setExpanded(false)}
           >
             About me{" "}
@@ -56,7 +60,9 @@ function CustomNavbar() {
         <h5>
           <Link
             to="/projects"
-            className="nav-link"
+            className={`nav-link ${
+              location.pathname === "/projects" ? "active" : ""
+            }`}
             onClick={() => setExpanded(false)}
           >
             Portfolio{" "}
@@ -89,7 +95,9 @@ function CustomNavbar() {
         <h5>
           <Link
             to="/resume"
-            className="nav-link"
+            className={`nav-link ${
+              location.pathname === "/resume" ? "active" : ""
+            }`}
             onClick={() => setExpanded(false)}
           >
             Resume{" "}
