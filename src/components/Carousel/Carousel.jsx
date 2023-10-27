@@ -6,8 +6,7 @@ import MenuMatch from "../../assets/Menu-Match.png";
 import JSQuiz from "../../assets/JSQuiz.png";
 import WeatherDashboard from "../../assets/WeatherDashboard.png";
 import PasswordGen from "../../assets/PasswordGen.png";
-
-import Globe from "../Globe/Mars";
+import Mars from "../Globe/Mars";
 
 function CustomCarousel() {
   return (
@@ -17,10 +16,12 @@ function CustomCarousel() {
         indicators={false}
         fade={true}
         touch={true}
-        interval={9000}
+        interval={8500}
       >
         <Carousel.Item>
-          <img src={ShredNStyle} alt="First slide" className="img-fluid" />
+          <a href="https://github.com/nlad218/ShredNStyle" target="_blank">
+            <img src={ShredNStyle} alt="First slide" className="img-fluid" />
+          </a>
           <h2 className="projectDescription">SkiNStyle</h2>
           <p className="projectDescriptionPara">
             Our recent group project was the development of a ski and
@@ -37,7 +38,9 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={MenuMatch} alt="Second slide" className="img-fluid" />
+          <a href="https://github.com/jkellogg01/menu-match" target="_blank">
+            <img src={MenuMatch} alt="Second slide" className="img-fluid" />
+          </a>
           <h2 className="projectDescription">Menu Match</h2>
           <p className="projectDescription">
             For my initial group project during my course, we developed a
@@ -55,7 +58,9 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={TechBlog} alt="Third slide" className="img-fluid" />
+          <a href="https://github.com/JMADA257/Tech-Blog" target="_blank">
+            <img src={TechBlog} alt="Third slide" className="img-fluid" />
+          </a>
           <h2 className="projectDescription">Tech Blog </h2>
           <p className="projectDescription">
             This project represents a significant milestone in my development
@@ -73,7 +78,9 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={JSQuiz} alt="Fourth slide" className="img-fluid" />
+          <a href="https://github.com/JMADA257/JS-Quiz" target="_blank">
+            <img src={JSQuiz} alt="Fourth slide" className="img-fluid" />
+          </a>
           <h2 className="projectDescription">JSQuiz</h2>
           <p className="projectDescription">
             This personal project, constructed entirely by me from the ground
@@ -87,7 +94,16 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={WeatherDashboard} alt="Fifth slide" className="img-fluid" />
+          <a
+            href="https://github.com/lillianedwards/Weather-Dashboard"
+            target="_blank"
+          >
+            <img
+              src={WeatherDashboard}
+              alt="Fifth slide"
+              className="img-fluid"
+            />
+          </a>
           <h2 className="projectDescription">Weather Dashboard</h2>
           <p className="projectDescription">
             This project marked my initial collaboration with a team from Menu
@@ -105,7 +121,9 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={PasswordGen} alt="Sixth slide" className="img-fluid" />
+          <a href="https://github.com/JMADA257/Password-Gen" target="_blank">
+            <img src={PasswordGen} alt="Sixth slide" className="img-fluid" />
+          </a>
           <h2 className="projectDescription">Password Generator</h2>
           <p className="projectDescription">
             This private project was developed to empower users in creating
@@ -120,7 +138,7 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
       </Carousel>
-      <Globe />
+      <Mars />
     </>
   );
 }

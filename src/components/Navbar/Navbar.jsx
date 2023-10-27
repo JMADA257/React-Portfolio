@@ -37,7 +37,9 @@ function CustomNavbar() {
           <Link
             to="/about"
             className={`nav-link ${
-              location.pathname === "/about" ? "active" : ""
+              location.pathname === "/" || location.pathname === "/about"
+                ? "active"
+                : ""
             }`}
             onClick={() => setExpanded(false)}
           >

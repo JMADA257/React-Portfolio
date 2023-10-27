@@ -6,6 +6,7 @@
   border-radius: 15px 15px 15px;
   background-color: var(--RichBlack);
   color: var(--white);
+  position: relative;
 }
 
 .Carousel .img-fluid {
