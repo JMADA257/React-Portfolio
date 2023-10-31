@@ -7,8 +7,17 @@ import JSQuiz from "../../assets/JSQuiz.png";
 import WeatherDashboard from "../../assets/WeatherDashboard.png";
 import PasswordGen from "../../assets/PasswordGen.png";
 import Mars from "../Globe/Mars";
+import Mercury from "../Globe/Mercury";
+import Earth from "../Globe/Globe";
+import { useState } from "react";
 
 function CustomCarousel() {
+  const [planetIndex, setPlanetIndex] = useState(0);
+
+  const onSlideChange = (slideIndex) => {
+    setPlanetIndex(slideIndex);
+  };
+
   return (
     <>
       <Carousel
@@ -17,6 +26,7 @@ function CustomCarousel() {
         fade={true}
         touch={true}
         interval={8500}
+        onSlide={onSlideChange}
       >
         <Carousel.Item>
           <a href="https://github.com/nlad218/ShredNStyle" target="_blank">
@@ -138,7 +148,15 @@ function CustomCarousel() {
           </p>
         </Carousel.Item>
       </Carousel>
-      <Mars />
+      {/* {planetIndex === 0 && <Mars />} */}
+      {/* {planetIndex === 1 && <h2>Mercury</h2>} */}
+      {/* {planetIndex === 1 && <Mercury />} */}
+      {/* {planetIndex === 2 && <Earth />} */}
+      {/* {planetIndex === 2 && <h2>Earth</h2>} */}
+
+      <Mars visible={planetIndex === 0} />
+      {/* <Earth visible={planetIndex === 1} />
+      <Mercury visible={planetIndex === 2} /> */}
     </>
   );
 }

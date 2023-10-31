@@ -3,7 +3,7 @@ import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import MarsMap from "../../assets/textures/mars.jpg";
 
-function Globe(props) {
+function Mars(props) {
   // Load the Mars texture using the TextureLoader from three.js
   const mars = useLoader(TextureLoader, MarsMap);
 
@@ -11,7 +11,13 @@ function Globe(props) {
   const meshRef = useRef();
 
   return (
-    <div style={{ width: "100%", height: "300px" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "300px",
+        // visibility: props.visible ? "visible" : "hidden",
+      }}
+    >
       <Canvas>
         {/* Add an ambient light to the scene */}
         <ambientLight intensity={1} />
@@ -50,4 +56,4 @@ function GlobeRotation({ meshRef }) {
   return null;
 }
 
-export default Globe;
+export default Mars;

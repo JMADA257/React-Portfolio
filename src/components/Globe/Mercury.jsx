@@ -3,7 +3,7 @@ import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import MercuryMap from "../../assets/textures/mercury.jpg";
 
-function Globe(props) {
+function Mercury(props) {
   // Load the Mercury texture using the TextureLoader from three.js
   const mercury = useLoader(TextureLoader, MercuryMap);
 
@@ -50,4 +50,4 @@ function GlobeRotation({ meshRef }) {
   return null;
 }
 
-export default Globe;
+export default Mercury;

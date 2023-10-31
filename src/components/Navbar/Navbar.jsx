@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 import ContactModal from "../Modal/Modal";
 import { Link, useLocation } from "react-router-dom";
+import { ContactUs } from "../Email/Email-Form";
 
 function CustomNavbar() {
   const [showModal, setShowModal] = useState(false);
@@ -106,7 +107,9 @@ function CustomNavbar() {
           </Link>
         </h5>
       </div>
-      <ContactModal show={showModal} handleClose={handleClose} />
+      <ContactModal show={showModal} handleClose={handleClose}>
+        <ContactUs />
+      </ContactModal>
     </nav>
   );
 }

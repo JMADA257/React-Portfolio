@@ -3,7 +3,7 @@ import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import EarthMap from "../../assets/textures/earth.jpg";
 
-function Globe(props) {
+function Earth(props) {
   // Load the Earth texture using the TextureLoader from three.js
   const earth = useLoader(TextureLoader, EarthMap);
 
@@ -50,4 +50,4 @@ function GlobeRotation({ meshRef }) {
   return null;
 }
 
-export default Globe;
+export default Earth;

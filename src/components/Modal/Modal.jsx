@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "../Modal/Modal.css";
 
-function ContactModal({ show, handleClose }) {
+function ContactModal({ show, handleClose, children }) {
   return (
     <>
       <div className="modal-content">
@@ -17,15 +17,16 @@ function ContactModal({ show, handleClose }) {
             <Modal.Title>Send me an Email</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <input className="emailField" type="text" placeholder="Email" />
+            {/* <input className="emailField" type="text" placeholder="Email" />
             <input className="nameField" type="text" placeholder="Name" />
-            <input className="messageField" type="text" placeholder="Message" />
+            <input className="messageField" type="text" placeholder="Message" /> */}
+            {children}
           </Modal.Body>
           <Modal.Footer style={{ backgroundColor: "var(--modalGrey)" }}>
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary">Send Email</Button>
+            {/* <Button variant="primary">Send Email</Button> */}
           </Modal.Footer>
         </Modal>
       </div>
