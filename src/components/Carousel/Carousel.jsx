@@ -28,7 +28,7 @@ function CustomCarousel() {
             <img src={Blurb} alt="Third slide" className="img-fluid" />
           </a>
           <h2 className="projectDescription">Blurb</h2>
-          <p className="projectDescription">
+          <p className="projectDescriptionPara">
             "Blurb" is a mobile-centric Twitter clone project showcasing my
             expertise in the MERN stack. Developed collaboratively within a
             group, this project replicates key Twitter features, emphasizing a
@@ -63,7 +63,7 @@ function CustomCarousel() {
             <img src={MenuMatch} alt="Second slide" className="img-fluid" />
           </a>
           <h2 className="projectDescription">Menu Match</h2>
-          <p className="projectDescription">
+          <p className="projectDescriptionPara">
             For my initial group project during my course, we developed a
             front-end app aimed at enhancing the dining experience at dinner
             parties. The app provides users with randomly generated drink and
