@@ -1,14 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../Carousel/Carousel.css";
 import ShredNStyle from "../../assets/ShredNStyle.png";
-import TechBlog from "../../assets/Tech-Blog.png";
 import MenuMatch from "../../assets/Menu-Match.png";
-import JSQuiz from "../../assets/JSQuiz.png";
-import WeatherDashboard from "../../assets/WeatherDashboard.png";
-import PasswordGen from "../../assets/PasswordGen.png";
+import Blurb from "../../assets/Blurb.png";
 import Mars from "../Globe/Mars";
-import Mercury from "../Globe/Mercury";
-import Earth from "../Globe/Globe";
 import { useState } from "react";
 
 function CustomCarousel() {
@@ -28,6 +23,22 @@ function CustomCarousel() {
         interval={8500}
         onSlide={onSlideChange}
       >
+        <Carousel.Item>
+          <a href="https://github.com/ljkahn/Blurb" target="_blank">
+            <img src={Blurb} alt="Third slide" className="img-fluid" />
+          </a>
+          <h2 className="projectDescription">Blurb</h2>
+          <p className="projectDescription">
+            "Blurb" is a mobile-centric Twitter clone project showcasing my
+            expertise in the MERN stack. Developed collaboratively within a
+            group, this project replicates key Twitter features, emphasizing a
+            mobile-first approach. It demonstrates my proficiency in utilizing
+            MongoDB, Express, React, and Node.js to create a real-time,
+            user-friendly mobile application, highlighting my ability to work
+            effectively as part of a team to deliver a functional and engaging
+            product.
+          </p>
+        </Carousel.Item>
         <Carousel.Item>
           <a href="https://github.com/nlad218/ShredNStyle" target="_blank">
             <img src={ShredNStyle} alt="First slide" className="img-fluid" />
@@ -65,86 +76,6 @@ function CustomCarousel() {
             cocktail or food item. This project was instrumental in deepening
             our understanding of API integration and the proper methods for
             implementing them effectively.
-          </p>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a href="https://github.com/JMADA257/Tech-Blog" target="_blank">
-            <img src={TechBlog} alt="Third slide" className="img-fluid" />
-          </a>
-          <h2 className="projectDescription">Tech Blog </h2>
-          <p className="projectDescription">
-            This project represents a significant milestone in my development
-            journey, as I designed and created it independently. The tech blog I
-            developed provides users with the capability to sign in, express
-            their thoughts, and share them on a dedicated forum. Through this
-            experience, I delved deeper into the mechanics of user
-            authentication and login systems, refining my skills in this
-            critical aspect of web development. Notably, this solo endeavor not
-            only enhanced my technical prowess but also bolstered my confidence
-            as a developer. It underscored my ability to take on complex tasks
-            and complete them successfully. The project's success served as a
-            testament to my growth and proficiency as a solo developer, a
-            milestone that I am proud to share with others.
-          </p>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a href="https://github.com/JMADA257/JS-Quiz" target="_blank">
-            <img src={JSQuiz} alt="Fourth slide" className="img-fluid" />
-          </a>
-          <h2 className="projectDescription">JSQuiz</h2>
-          <p className="projectDescription">
-            This personal project, constructed entirely by me from the ground
-            up, was a valuable learning experience. It taught me how to set
-            timers and deliver quizzes to users, focusing predominantly on
-            JavaScript logic. To add a touch of humor and camaraderie, I
-            included a few joke questions for the classmates I journeyed through
-            school with. While it posed several challenges, I am proud to say
-            that I persevered and successfully completed this project, gaining
-            important skills in the process.
-          </p>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a
-            href="https://github.com/lillianedwards/Weather-Dashboard"
-            target="_blank"
-          >
-            <img
-              src={WeatherDashboard}
-              alt="Fifth slide"
-              className="img-fluid"
-            />
-          </a>
-          <h2 className="projectDescription">Weather Dashboard</h2>
-          <p className="projectDescription">
-            This project marked my initial collaboration with a team from Menu
-            Match, serving as an invaluable learning experience for navigating
-            GitHub merge conflict errors. It deepened my understanding of how
-            GitHub functions in a group setting and the strategic choices one
-            can make to prevent conflicts from arising. Additionally, this
-            endeavor broadened my knowledge of API calls and significantly
-            enhanced my proficiency in working with local storage. The project
-            itself is a fully functional weather app that simplifies the process
-            of checking the weather. Users need only input a city name, and the
-            app displays the current day's weather as well as forecasts for the
-            next seven days. It also efficiently stores these city references in
-            local storage, allowing for easy access to past searches.
-          </p>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a href="https://github.com/JMADA257/Password-Gen" target="_blank">
-            <img src={PasswordGen} alt="Sixth slide" className="img-fluid" />
-          </a>
-          <h2 className="projectDescription">Password Generator</h2>
-          <p className="projectDescription">
-            This private project was developed to empower users in creating
-            customized passwords tailored to their preferences. By incorporating
-            user input, including factors like special characters and uppercase
-            letters, the password generator produces unique and secure
-            passwords. In the process of building this project, I gained
-            valuable insights into working with alerts and extracting user
-            information. This experience laid the foundation for my ongoing
-            development journey, equipping me with essential skills in user
-            interaction and data handling.
           </p>
         </Carousel.Item>
       </Carousel>
