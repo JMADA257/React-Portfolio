@@ -38,7 +38,7 @@ function CustomCarousel() {
             hosted using MongoDB Atlas and Heroku. This project showcases my
             proficiency in developing scalable web applications with modern
             technologies and implementing essential user management and
-            communication features..
+            communication features.
           </p>
         </Carousel.Item>
         <Carousel.Item>
